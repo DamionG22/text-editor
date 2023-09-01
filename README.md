@@ -18,7 +18,7 @@
   Online PWA that also has offline abilities for users who install the PWA "JATE" .  
 
   ### Installation 
-  Users can visit the PWA URL " ", as well as having the option to install the text editor  to their machine to allow offline use.
+  Users can visit the PWA URL "https://frozen-plains-22737-b9599d64b619.herokuapp.com/ ", as well as having the option to install the text editor  to their machine to allow offline use.
 
   ### Usage 
   This project was intially created on GitHub and coding was edited using VS Code, Deployment was done on Heroku. This PWA utilizes JS,HTML,CSS primarily. The PWA also utilizes several node module packages .
@@ -46,4 +46,10 @@
 
   ### GitHub
   [Github Profile](https://github.com/DamionG22)
+
+
+  ![Alt text](image.png)
+
+
+  
 
