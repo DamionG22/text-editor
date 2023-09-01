@@ -14,19 +14,19 @@ const initdb = async () =>
 
 
 export const putDb = async (content) => {
-  const db = await dbPromise;
+  const db = await openDB('jate', 1);
   const tx = db.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
-  const id = await store.put({ content });
+  const id = await store.put({ id: 1, value: content });
   await tx.done;
   return id;
 };
 
 export const getDb = async () => {
-  const db = await dbPromise;
+  const db = await openDB('jate', 1);
   const tx = db.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
-  const contentArray = await store.getAll();
+  const contentArray = await store.get(1);
   await tx.done;
   return contentArray;
 };
